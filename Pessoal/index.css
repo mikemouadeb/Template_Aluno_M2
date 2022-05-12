@@ -23,18 +23,20 @@ p
 
 body
 {
-    background-color: darkkhaki;
+    background-color: white;
     box-shadow: 5ch;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
+    
 }
 
 .img
 {
     width: 230px;
     align-self: center;
+    text-align: center;
 }
 
 
