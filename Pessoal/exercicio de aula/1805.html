@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Vitor</title>
+    <style>
+        body
+        {
+            background-color: papayawhip;
+            font: normal 16pt Arial;
+        }
+        h1
+        {
+            color: midnightblue;
+        }
+        div#nome
+        {
+            width: 270px;
+            font: normal 16pt Arial;
+            text-align: center;
+            color: darkred;
+        }
+        div#conta
+        {
+            width: 370px;
+            font: normal 16pt Arial;
+            align-self: center;
+            color: darkred;
+        }
+        input
+        {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio Sala</h1>
+    Valor da conta: <input type="number" name="txtcon" id="txtcon">
+    Nome: <input type="text" name="txtname" id="txtname">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id = "nome"></div>
+    <div id = "conta"></div>
+
+    <script>
+        window.alert("TA MUITO FRIO!");
+         function calcular ()
+        {
+            var txtcon = window.document.getElementById('txtcon')
+            var txtname = window.document.getElementById('txtname')
+            var nome = window.document.getElementById('nome')
+            var conta = window.document.getElementById('conta')
+            var valorNome = (txtname.value)
+            var valorConta = (txtcon.value)
+            valorConta = valorConta * 1.15;
+            
+            nome.innerHTML = `<p> O seu nome é <strong>${valorNome}BALDO</strong> </p>`
+            conta.innerHTML = `<p> O valor da sua conta é de <strong>${valorConta} reais.</strong></p>`
+           
+        }
+
+
+    </script>
+</body>
+</html>
