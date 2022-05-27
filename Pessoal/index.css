@@ -6,24 +6,31 @@ text-align: center;
 
 h2
 { 
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
 h3
 {
     color: rgb(0, 0, 0);
-    text-align: center;
+    text-align: left;
+    font-size: 17px;
+    background-color: lemonchiffon;
+    width: 420px;
+    
+    
+
 }
 
 p
 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 body
 {
-    background-color: rgb(52, 67, 224);
+    background-color: rgb(210, 230, 250);
+    width: 235 px;
     box-shadow: 5ch;
     display: flex;
     flex-direction: column;
@@ -31,6 +38,8 @@ body
     align-items: stretch;
     color: rgb(255, 255, 255);
     padding: 15px;
+    font-size: 14px;
+    
     
 }
 
@@ -39,7 +48,7 @@ body
     width: 230px;
     align-self: center;
     text-align: center;
-    box-shadow: 3px 3px 10px black;
+    box-shadow: 5px 5px 10px black;
     border-radius: 10px;
     margin: auto;
 }
@@ -49,16 +58,12 @@ body
 .ima
 {
     width: 190px;
-    box-shadow: 3px 3px 10px black;
+    box-shadow: 5px 5px 10px black;
     border-radius: 10px;
     margin: auto;
 }
 
-div
-{
 
-    float: left;
-}
 
 .divForInfos 
 {
@@ -70,3 +75,27 @@ div
     gap: 250px;
 }
 
+.cima
+{
+    text-align: center;
+}
+
+
+.a.inter
+{
+    font-size: 17px;
+    background-color: khaki;
+    width: 220px;
+    color: black;
+}
+
+
+
+
+.edu
+{
+    font-size: 17px;
+    background-color: lemonchiffon;
+    width: 77px;
+    color: black;
+}
