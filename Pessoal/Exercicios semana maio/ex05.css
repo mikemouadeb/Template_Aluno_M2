@@ -1,0 +1,32 @@
+body
+{
+    background-color: rgb(25, 199, 209);
+    font: normal 15 pt Arial;
+}
+header
+{
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+section
+{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.365);
+    text-align: left;
+    
+}
+footer
+{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-style: italic;
+}
+.qntalunos
+{
+    text-align: center;
+}
