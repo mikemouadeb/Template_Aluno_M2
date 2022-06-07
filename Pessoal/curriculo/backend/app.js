@@ -15,7 +15,9 @@ criarTabela();
 
 //pegando os dados do servidor
 app.get('/', pegandoDados);
-
+app.post('/', inserirDados);
+app.put('/', atualizarDados);
+app.delete('/', deletarDados);
 
 //criando servidor
 app.listen(port, () =>  
