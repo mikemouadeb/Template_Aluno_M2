@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="index.css">
    
 </head> 
-<body>
+<body onload="pegarDados()">
 
     <title>CVV-Mike Mouadeb</title>   
     
@@ -37,12 +37,12 @@
         <br>
         <br>
         <br>
-        <h2>Nome: Mike Rahmoun Mouadeb</h2>
-        <h2>Idade: 18 anos</h2>
+        <h2 id="nome"></h2>
+        <h2 id="idade"></h2>
         <img class= "img" src="https://media-exp1.licdn.com/dms/image/C5603AQETxAsQqpK41w/profile-displayphoto-shrink_200_200/0/1635186154768?e=1655337600&v=beta&t=HgROtPwUSHhS7ZGEpjmzZJS7kbjekY2yQdqc80i-MZg"align="middle">
-        <p><strong> Contato:</strong> (11) 99230-1577</p>
-        <p><strong> Email:</strong> mike.mouadeb@sou.inteli.edu.br</p>
-        <p><strong> Endereço:</strong> Rua Doutor Brasilio Machado</p>
+        <p id="contato"></p>
+        <p id="email"></p>
+        <p id="endereco"></p>
     </div>
 
 </div>
@@ -78,8 +78,7 @@
 
 <input type="button" value="Não gostei!" onclick="confirmar()">
 
-
-
+<script src="./index.js"></script>
 <script>
        function confirmar()
        {
@@ -90,7 +89,7 @@
 
 </script>
 <script>
-    $("p").fadeOut("400000000").fadeIn("200")
+    $("p").fadeOut("4000000").fadeIn("200000")
 </script>
 
 
