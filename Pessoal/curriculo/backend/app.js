@@ -1,6 +1,6 @@
 import express from 'express';
 import { openDb } from './configdb.js';
-import { pegandoDados } from './controller/mike.js';
+import { pegandoDados, inserirDados, atualizarDados, deletarDados } from './controller/mike.js';
 import { criarTabela } from './controller/mike.js';
 import cors from 'cors';
 

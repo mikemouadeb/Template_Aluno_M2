@@ -19,17 +19,7 @@ export async function inserirDados(req, res) {
     
 }
 
-//atualizar dados na tabela
 export async function atualizarDados(req, res) {
-    
-}
-
-//deletar dados na tabela
-export async function deletarDados(req, res) {
-    
-}
-
-export async function autalizarDados(req, res) {
     let pessoa = req.body;
     openDb().then(db => {
         db.run('UPDATE mike SET nome=?, WHERE idade=?', [pessoa.nome, pessoa.idade]);
