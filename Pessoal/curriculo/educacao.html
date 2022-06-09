@@ -17,7 +17,7 @@
             <li><a href="idiomas.html">Idiomas</a></li>
         </ul>
     </nav>
-    <div class="cima">
+    <div id="saida" class="cima">
         <h3><strong> Educação:</strong></h3>
         <p>Escola Beit Yaacov, São Paulo, Brazil, 2007 - 2021</p>   
         <p>Brazilian High School Diploma, December, 2021</p>
@@ -30,7 +30,7 @@
             <script>
                 function calcular()
                 {
-                    window.alert("A Escola Beit Yaacov é a única escola de imersão trilíngue que atende a comunidade judaica de São Paulo. A missão da EBY é fornecer educação de alta qualidade para preparar cidadãos com forte identidade judaica com mentalidade internacional, por meio do desenvolvimento de habilidades acadêmicas e valores éticos universais.")
+                    document.getElementById("saida").innerHTML += ("<p>A Escola Beit Yaacov é a única escola de imersão trilíngue que atende a comunidade judaica de São Paulo. A missão da EBY é fornecer educação de alta qualidade para preparar cidadãos com forte identidade judaica com mentalidade internacional, por meio do desenvolvimento de habilidades acadêmicas e valores éticos universais.</p>") 
                 } 
          
          </script>
