@@ -6,27 +6,32 @@ text-align: center;
 
 h2
 { 
-    font-size: 3rem;
+    font-size: 2rem;
     color: rgb(0, 0, 0);
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
 }
 
 h3
 {
     color: rgb(0, 0, 0);
-    font-size: 3rem;
-    background-color: rgb(255, 255, 255);
+    font-size: 2rem;
+    background-color: ivory;
+    font-family: 'Times New Roman', Times, serif;
+
 }
 
 p
 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body
 {
-    background-color: rgb(255, 255, 255);
+    background-color: ivory;
     width: 235 px;
     box-shadow: 5ch;
     display: flex;
@@ -36,7 +41,7 @@ body
     color: rgb(255, 255, 255);
     padding: 0;
     margin: 0;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 .img
@@ -97,11 +102,13 @@ body
 }
 .botao
 {
-    font-size: 20px;
-    width: 10%;
+    font-size: 25px;
+    width: 12%;
     font-weight: 700;
     color: white;
     background-color: black;
+    border-radius: 10px;
+
 }
 
 nav {
@@ -109,20 +116,92 @@ nav {
     display: flex;
     justify-content: center;
     padding: 0.4rem 0;
-    background-color: rgb(255, 108, 108);
+    background-color: rgb(182, 254, 200);
+    font-family: 'Times New Roman', Times, serif;
+
 }
 
 nav ul {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 nav ul li {
     list-style: none;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 nav ul li a {
     text-decoration: none;
     color: black;
+}
+
+.esportes
+{
+    width: 400px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+}
+.fc
+{
+    width:160px ;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+}
+.marcha
+{
+    width: 337px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+}
+.manhattan
+{
+    width: 225px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+}
+
+.ty
+{
+    width: 210px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+}
+
+.bra
+{
+    width: 310px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+}
+
+.eua
+{
+    width: 338px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+}
+
+.isra
+{
+    width: 180px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+}
+
+.espa
+{
+    width: 195px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+}
+
+.botao2
+{
+    font-size: 16px;
+    width: 10%;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
 }
