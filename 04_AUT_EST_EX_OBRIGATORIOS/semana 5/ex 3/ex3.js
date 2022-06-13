@@ -1,32 +1,19 @@
-let numArray = [];
+function calcular() 
+{
+    var valfoco = document.getElementById("valfoco").value
+    var seq = document.getElementById("num1").value
+    var resul = document.getElementById("res")
+
+    var array = seq.split(",") //split de acordo com a vírgula.
+    var ordem = array.sort() //manipulação de array: Deixar em ordem.
+
+    ordem.indexOf(valfoco) // a posicao que ta (0,1,2)
+    resul.innerHTML = `Em ordem crescente ${ordem}, e o valor foco está na posição ${ordem.indexOf(valfoco) + 1}`
+
+    
 
 
-function getValues() {
-    event.preventDefault();
-    let numero = document.getElementById('numero').value;
-    numArray.push(Number(numero));
-    document.getElementById('numero').value = '';
-    console.log(numArray);
+
+    
 }
 
-
-function calcular() {
-    event.preventDefault();
-    numArray.sort((a,b) => a-b);
-    let valorFoco = document.getElementById('valorFoco').value;
-    findValorFoco(Number(valorFoco));
-}
-
-
-function findValorFoco(valorFoco) {
-    let valorFocoIndex = "valor não encontrado";
-    for (let index = 0; index < numArray.length; index++) {
-        if (numArray[index] == valorFoco) {
-            valorFocoIndex = index;
-            break;
-        }
-    }
-    let display = document.getElementById('display');
-    display.innerHTML += `<h1> ${numArray} </h1>`
-    display.innerHTML += `<h1> O valor foco se encontra na posição ${valorFocoIndex} </h1>`
-}

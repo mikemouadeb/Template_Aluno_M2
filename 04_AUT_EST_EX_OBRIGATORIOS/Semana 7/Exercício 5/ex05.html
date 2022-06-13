@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 5</title>
+    <title>Exercício 5</title>
+    <link rel="stylesheet" href="ex05.css">
 </head>
 <body>
-    <input type="number" id="quantidade" placeholder="Quantidade de alunos">
-    <button onclick="inserirAlunos()">Inserir Dados</button>
-    <!-- <input type="number" id="notaProva" placeholder="Nota da prova">
-    <input type="number" id="notaTrabalho" placeholder="Nota do trabalho">     -->
-    <div id="caixaDados"></div>
-    <button onclick="calcular()">Calcular</button>
-    <div id="display"></div>
+    <header>
+        <h1>Exercício 5</h1>
+    </header>
+    <section>
+        <div>
+        <strong>Quantidade de alunos: </strong><input type="number" name="qntalunos" id="qnt"> 
+        <p><input type="button" value="Verificar" onclick="verificar()"></p>  
+        </div>
+
+        <div>
+            <p>Nota Prova: <input type="number" name="prova" id="prova"></p>
+            <p>Nota Trabalho: <input type="number" name="trabalho" id="trab"></p>
+            <p><input type="button" value="Calcular" onclick="calcular()"></p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; MikeMoaudeb</p>
+    </footer>
     <script src="ex05.js"></script>
 </body>
 </html>

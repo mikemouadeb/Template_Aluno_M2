@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercício 3
+    </title>
+    <link rel="stylesheet" href="ex3.css">
 </head>
 <body>
-    <form onsubmit="getValues()">
-        <label for="">Adicione numeros no array</label><br><br>
-        <input type="text" id="numero"><br><br>
-        <input type="submit" value="Adicionar"><br><br>
-    </form>
-    <form onsubmit="calcular()">
-        <label for="">Valor foco</label><br><br>
-        <input type="text" id="valorFoco"><br><br>
-        <input type="submit" value="Calcular"><br><br>
-    </form>
-    <div id="display">
-    </div>
-    <script src="./index.js"></script>
+    <header>
+        <h1>Exercício 3 semana 5</h1>
+    </header>
+    <section>
+        <div>
+            <input type="text" name="num1" id="num1">
+            <input type="number" name="num2" id="valfoco">
+            <input type="button" onclick="calcular()" value="Calular">
+        
+        </div>
+        <div>
+            <p id="res">Resulatdo:</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; MikeMoaudeb</p>
+    </footer>
+    <script src="ex3.js"></script>
 </body>
 </html>
