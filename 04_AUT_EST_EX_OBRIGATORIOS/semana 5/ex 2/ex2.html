@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caixa Eletronico</title>
+    <title>Exercício 1
+    </title>
+    <link rel="stylesheet" href="ex2.css">
 </head>
 <body>
-    <label for="">Amount</label>
-    <input type="number" id="amount">
-    <button id="button" type="submit" onclick="calcular()">calcular</button>
-    <div id="resultado">
-
-    </div>
-    <script src="./script.js"></script>
+    <header>
+        <h1>Exercício 1 semana 5</h1>
+    </header>
+    <section>
+        <div>
+            <p>Valor do produto: <input type="number" name="valor" id="val"></p>
+            <input type="button" value="Calcular" onclick="calcular()">
+        </div>
+        <div>
+            <p id="res">Resultado:</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; MikeMoaudeb</p>
+    </footer>
+    <script src="ex2.js"></script>
 </body>
 </html>

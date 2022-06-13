@@ -1,54 +1,21 @@
-function calcular() {
-    let notasCem = 0;
-    let notasCinquenta = 0;
-    let notasVinte = 0;
-    let notasDez = 0;
-    let notasCinco = 0;
-    let notasDois = 0;
-    let notasUm = 0;
-    let display = document.getElementById('resultado');
-    let amount = document.getElementById('amount').value;
+function calcular()
+{
+    var valor = document.getElementById("val").value
+    var nota_cem = valor / 100 
+    var sobra_nota_cem = valor % 100
+    var nota_cinquenta = sobra_nota_cem / 50
+    var sobra_nota_cinquenta = sobra_nota_cem % 50
+    var nota_vinte = sobra_nota_cinquenta / 20
+    var sobra_nota_vinte = sobra_nota_cinquenta % 20
+    var nota_dez = sobra_nota_vinte / 10
+    var sobra_nota_dez = sobra_nota_vinte % 10
+    var nota_cinco = sobra_nota_dez / 5
+    var sobra_nota_cinco = sobra_nota_dez % 5
+    var nota_um = sobra_nota_cinco / 1
+    var sobra_nota_um = sobra_nota_cinco % 1  
 
-    while ((amount / 100 >= 1)) {
-        amount = amount - 100;
-        notasCem++;
-    }
 
-    while ((amount / 50 >= 1)) {
-        amount = amount - 50;
-        notasCinquenta++;
-    }
+    document.getElementById("res").innerHTML = `${nota_cem} notas de 100. ${nota_cinquenta} notas de 50. ${nota_vinte} notas de 20. ${nota_dez} notas de dez. ${nota_cinco} notas de 5. ${nota_um} notas de um.`
 
-    while ((amount / 20 >= 1)) {
-        amount = amount - 20;
-        notasVinte++;
-    }
 
-    while ((amount / 10 >= 1)) {
-        amount = amount - 10;
-        notasDez++;
-    }
-    
-    while ((amount / 5 >= 1)) {
-        amount = amount - 5;
-        notasCinco++;
-    }
-
-    while ((amount / 2 >= 1)) {
-        amount = amount - 2;
-        notasDois++;
-    }
-    
-    while ((amount / 1 >= 1)) {
-        amount = amount - 1;
-        notasUm++;
-    }
-
-    display.innerHTML += `<h1> Notas de 100: ${notasCem}</h1>`;
-    display.innerHTML += `<h1> Notas de 50: ${notasCinquenta}</h1>`;
-    display.innerHTML += `<h1> Notas de 20: ${notasVinte}</h1>`;
-    display.innerHTML += `<h1> Notas de 10: ${notasDez}</h1>`;
-    display.innerHTML += `<h1> Notas de 5: ${notasCinco}</h1>`;
-    display.innerHTML += `<h1> Notas de 2: ${notasDois}</h1>`;
-    display.innerHTML += `<h1> Notas de 1: ${notasUm}</h1>`;
 }

@@ -1,28 +1,44 @@
-function calcular() {
-    event.preventDefault();;
-    let num1 = document.getElementById('num1').value;
-    let num2 = document.getElementById('num2').value;
-    let operador = document.getElementById('operador').value;
-    let resultado = 0;
-    switch (operador) {
-        case '+':
-            resultado = Number(num1) + Number(num2);
-            break;
-        case '-':
-            resultado = Number(num1) - Number(num2);
-            break;
-        case '*':
-            resultado = Number(num1) * Number(num2);
-            break;
-        case '/':
-            resultado = Number(num1) / Number(num2);
-            break;
-        case '//':
-            resultado = Math.floor(Number(num1)/Number(num2));
-            break; 
-        case '%':
-            resultado = Number(num1) % Number(num2);
-            break;        
-    }
-    document.getElementById('resultado').innerHTML = resultado;
+function adicionar()
+{
+    var numero1 = Number(document.getElementById("num1").value)
+    var numero2 = Number(document.getElementById("num2").value)
+    var resultado = document.getElementById("res")
+    var opera = numero1 + numero2
+    res.innerHTML = `A soma entre ${numero1} e ${numero2} é igual a ${opera}`
+}
+
+function subtrair()
+{
+    var numero1 = Number(document.getElementById("num1").value)
+    var numero2 = Number(document.getElementById("num2").value)
+    var resultado = document.getElementById("res")
+    var opera = numero1 - numero2
+    res.innerHTML = `A subtração entre ${numero1} e ${numero2} é igual a ${opera}`
+}
+
+function multiplicar()
+{
+    var numero1 = Number(document.getElementById("num1").value)
+    var numero2 = Number(document.getElementById("num2").value)
+    var resultado = document.getElementById("res")
+    var opera = numero1 * numero2
+    res.innerHTML = `A multiplicação entre ${numero1} e ${numero2} é igual a ${opera}`
+}
+
+function dividir()
+{
+    var numero1 = Number(document.getElementById("num1").value)
+    var numero2 = Number(document.getElementById("num2").value)
+    var resultado = document.getElementById("res")
+    var opera = numero1 / numero2
+    res.innerHTML = `A divisão entre ${numero1} e ${numero2} é igual a ${opera}`
+}
+
+function calcular()
+{
+    var numero1 = Number(document.getElementById("num1").value)
+    var numero2 = Number(document.getElementById("num2").value)
+    var resultado = document.getElementById("res")
+    var opera = numero1 % numero2
+    res.innerHTML = `O resto da divisão entre ${numero1} e ${numero2} é igual a ${opera}`
 }
