@@ -7,3 +7,5 @@ export async function openDb() {
         driver: sqlite3.Database
     })
 }
+
+//conectando com o banco de dados 

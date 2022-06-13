@@ -10,10 +10,10 @@ const port = 3000;
 app.use(express.json());
 app.use(cors());
 
-openDb();
+openDb(); //abrir banco de dados
 criarTabela();
 
-//pegando os dados do servidor
+//pegando os dados do servidor: endpoints
 app.get('/', pegandoDados);
 app.post('/', inserirDados);
 app.put('/', atualizarDados);
