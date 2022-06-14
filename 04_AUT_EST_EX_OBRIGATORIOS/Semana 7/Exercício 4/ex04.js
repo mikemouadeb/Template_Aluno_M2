@@ -4,8 +4,6 @@ function confirmar()
     var select = document.getElementById("select").value
     var res= document.getElementById("res")
 
-    console.log(quant)
-
     if (select == "diurno") 
         {
             var resul = quant * 200
